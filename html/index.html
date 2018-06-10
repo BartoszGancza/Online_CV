@@ -4,12 +4,18 @@
 <head>
     <meta charset="utf-8" />
     <link rel="manifest" href="/manifest.json">
-    <!-- Change for better search engine indexing -->
     <title>Bartosz Gańcza - CV</title>
-    <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#1aa3ff">
     <meta name="Description" content="Online CV page for Junior Web Developer Bartosz Gańcza">
+    <!-- Favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
     <style>
@@ -20,18 +26,29 @@
         #mugshot {width:70%; border-radius:30px;}
         .card, .card-header {background-color: rgba(0,0,0,0); border: 0px;}
         .junior {color: white !important;}
-        .list-group-item {background-color: rgba(0, 0, 0, 0);border-width: 0 0 0 0;}
-        .personal-info-pics {width: 7%; margin-right: 15px}
-        .technology-pics {height:60px}
-        .stars {margin-top:5px}
+        .list-group-item {background-color: rgba(0, 0, 0, 0); border-width: 0 0 0 0;}
+        .personal-info-pics {width: 7%; margin-right: 15px;}
+        .flags {border-radius: 50%; width: 15%; margin-right: 15px;}
+        .calendar-icon {width: 5%;}
+        .technology-pics {height:60px;}
+        .stars {margin-top:5px;}
         .content-toggle {border-bottom: 1px solid rgba(0, 153, 255); margin-bottom: 15px}
         .project {background-color: rgba(128, 191, 255, 0.5);border-radius: 10px;}
-        .technology-images img {margin: 5px 5px 5px 5px; height: 40px}
-        .key-f .list-group-item {background-color: rgba(0, 0, 0, 0);border-width: 0 0 1px 0;}
+        .technology-images img {margin: 5px 5px 5px 5px; height: 40px;}
+        .key-f .list-group-item {background-color: rgba(0, 0, 0, 0); border-width: 0 0 1px 0;}
         .arrow {margin-top: 5px; height: 20px}
         .card-header .arrow {margin-top: -4px; height: 10px;}
-        .git-icon {margin-top: 3px; height:35px}
+        .git-icon {margin-top: 3px; height:35px;}
         .footer {position: sticky; bottom: 0; width: 100%; line-height: 35px; background-color: #2e91e0;}
+        .os-logo:hover, #ratings img:hover, #ratings2 img:hover, .technology-images img:hover, .flags:hover {transition: all 0.1s ease-in;}
+        .os-logo:hover, #ratings img:hover, #ratings2 img:hover, .technology-images img:hover, .flags:hover {-webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.7)); -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='white')"; filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='white')";}
+        .nav-tabs {border-bottom: 1px solid transparent;}
+        .nav-tabs .nav-link {border-bottom: 1px solid #469cdf;}
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {border-color: #469cdf #469cdf #469cdf00; background-color: #469cdf; color: white;}
+        .nav-tabs .nav-link:focus,.nav-tabs .nav-link:hover {border-color: #469cdf #469cdf #469cdf00;}
+        .skill-pics {width: 40px; height: 40px; margin-top: 5px;}
+        .tab-icons {width: 20px; height: 20px; margin-right: 5px;}
+        .os-logo {width: 20%; margin-right: 5px;}
     </style>
 </head>
 <body>
@@ -53,204 +70,264 @@
             <p><h4>Technologies I work with:</h4></p>
             <div id="ratings" class="row justify-content-center align-items-center text-center" style="margin-top: 30px">
                 <div class="col-md-3">
-                    <img class="technology-pics" data-toggle="tooltip" title="Python" src="../images/python2.png" alt="Python"/>
+                    <img class="technology-pics" data-toggle="tooltip" title="Python" src="../images/python.svg" alt="Python"/>
                     <p class="stars">&#9733&#9733&#9733&#9734&#9734</p>
                 </div>
                 <div class="col-md-3">
-                    <img class="technology-pics" data-toggle="tooltip" title="C#" src="../images/csharp.png" alt="C Sharp"/>
+                    <img class="technology-pics" data-toggle="tooltip" title="C#" src="../images/csharp.svg" alt="C Sharp"/>
                     <p class="stars">&#9733&#9733&#9734&#9734&#9734</p>
                 </div>
                 <div class="col-md-3">
-                    <img class="technology-pics" data-toggle="tooltip" title="C" src="../images/C.png" alt="C"/>
+                    <img class="technology-pics" data-toggle="tooltip" title="C" src="../images/C.svg" alt="C"/>
                     <p class="stars">&#9733&#9733&#9734&#9734&#9734</p>
                 </div>
                 <div class="col-md-3">
-                    <img class="technology-pics" data-toggle="tooltip" title="HTML" src="../images/html.png" alt="HTML"/>
+                    <img class="technology-pics" data-toggle="tooltip" title="HTML" src="../images/html.svg" alt="HTML"/>
                     <p class="stars">&#9733&#9733&#9733&#9734&#9734</p>
                 </div>
             </div>
             <div id="ratings2" class="row justify-content-center align-items-center text-center">
                 <div class="col-md-3">
-                    <img data-toggle="tooltip" title="JavaScript" src="../images/js.png" alt="JavaScript"/>
+                    <img class="technology-pics" data-toggle="tooltip" title="JavaScript" src="../images/js.svg" alt="JavaScript"/>
                     <p class="stars">&#9733&#9733&#9734&#9734&#9734</p>
                 </div>
                 <div class="col-md-3">
-                    <img data-toggle="tooltip" title="Unity" src="../images/unity.png" alt="Unity"/>
+                    <img class="technology-pics" data-toggle="tooltip" title="Unity" src="../images/unity.svg" alt="Unity"/>
                     <p class="stars">&#9733&#9733&#9734&#9734&#9734</p>
                 </div>
             </div>
+            <p><h4>Foreign languages:</h4></p>
+            <ul id="foreignLanguages" class="list-group list-group-flush">
+                <li class="list-group-item"><img class="flags" data-toggle="tooltip" title="Polish" src="../images/pl_s.svg" alt="Polish"/>Native</li>
+                <li class="list-group-item"><img class="flags" data-toggle="tooltip" title="English" src="../images/gb_s.svg" alt="English"/>Fluent (C2 equivalent)</li>
+                <li class="list-group-item"><img class="flags" data-toggle="tooltip" title="Japanese" src="../images/jp_s.svg" alt="Japanese"/>Intermediate</li>
+            </ul>
+            <p><h4>OSs I use:</h4></p>
+            <p class="mb-4 text-center">
+                <img class="os-logo" data-toggle="tooltip" title="Windows" src="../images/windows.svg" alt="Windows"/>
+                <img class="os-logo" data-toggle="tooltip" title="MacOS" src="../images/mac.svg" alt="MacOS"/>
+                <img class="os-logo" data-toggle="tooltip" title="Ubuntu" src="../images/ubuntu.svg" alt="Ubuntu"/>
+            </p>
         </div>
         <div class="col-md-8">
-            <a data-toggle="collapse" href="#myProjects" role="button" aria-expanded="false" aria-controls="myProjects">
-                <div class="content-toggle">
-                    <span id="projects"><h3 style="margin-top: 5px">My projects: <img src="../images/si-glyph-arrow-down.svg" class="arrow float-right" alt="Expand/Collapse"/></h3></span>
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-projects-tab" data-toggle="tab" href="#nav-projects" role="tab" aria-controls="nav-projects" aria-selected="true">
+                        <span class="align-text-bottom"><img class="tab-icons" src="../images/project.svg" alt="Projects"/></span>My Projects
+                    </a>
+                    <a class="nav-item nav-link" id="nav-work-tab" data-toggle="tab" href="#nav-work" role="tab" aria-controls="nav-work" aria-selected="false">
+                        <span class="align-text-bottom"><img class="tab-icons" src="../images/work.svg" alt="Work"/></span>Work Experience
+                    </a>
+                    <a class="nav-item nav-link" id="nav-school-tab" data-toggle="tab" href="#nav-school" role="tab" aria-controls="nav-school" aria-selected="false">
+                        <span class="align-text-bottom"><img class="tab-icons" src="../images/education.svg" alt="Education"/></span>School
+                    </a>
+                    <a class="nav-item nav-link" id="nav-skills-tab" data-toggle="tab" href="#nav-skills" role="tab" aria-controls="nav-skills" aria-selected="false">
+                        <span class="align-text-bottom"><img class="tab-icons" src="../images/skills.svg" alt="Skills"/></span>Additional Skills
+                    </a>
                 </div>
-            </a>
-            <div id="myProjects">
-                <div class="row justify-content-center">
-                    <div class="col-md-11 project">
-                        <p><h5 class="text-center">
-                            Tweezel
-                            <a href="https://github.com/BartoszGancza/Twezeel">
-                            <img class="float-right git-icon" data-toggle="tooltip" title="Tweezel on GitHub" src="../images/github.png" alt="Project on GitHub"/>
-                            </a>
-                        </h5></p>
+            </nav>
+            <div class="tab-content mt-3" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
+                    <div id="myProjects">
                         <div class="row justify-content-center">
-                            <div class="col-md">
-                                <div id="chart" style="width: 100%"></div>
+                            <div class="col-md-11 project">
+                                <p><h5 class="text-center">
+                                    Tweezel
+                                    <a href="https://github.com/BartoszGancza/Twezeel">
+                                    <img class="float-right git-icon" data-toggle="tooltip" title="Tweezel on GitHub" src="../images/github.svg" alt="Project on GitHub"/>
+                                    </a>
+                                </h5></p>
+                                <div class="row justify-content-center">
+                                    <div class="col-md">
+                                        <div id="chart" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                                <p></p>
+                                <div class="row justify-content-center align-items-center text-center">
+                                    <img class="technology-images" data-toggle="tooltip" title="Flask" src="../images/flask.svg" alt="Flask"/>
+                                    <img class="technology-images" data-toggle="tooltip" title="Bootstrap" src="../images/bootstrap.svg" alt="Bootstrap"/>
+                                    <img class="technology-images" data-toggle="tooltip" title="Plotly" src="../images/plotly.svg" alt="Plotly"/>
+                                    <img class="technology-images" data-toggle="tooltip" title="Jinja2" src="../images/jinja.svg" alt="Jinja2"/>
+                                    <img class="technology-images" data-toggle="tooltip" title="jQuery" src="../images/jquery.svg" alt="jQuery"/>
+                                </div>
+                                <p style="margin-top: 5px">
+                                    Simple Twitter application created as a graduation project for online programming course CS50x by Harvard.
+                                </p>
+                                <h5>Key features:</h5>
+                                <ul class="list-group list-group-flush key-f">
+                                    <li class="list-group-item">Search for any user to check their public account information and see when they are most active (based on 100 recent Tweets)</li>
+                                    <li class="list-group-item">Post a Tweet - including emoji</li>
+                                    <li class="list-group-item">View your 30 newest followers</li>
+                                    <li class="list-group-item">Check your timeline, responses and direct messages</li>
+                                </ul>
+                                <p><h5>Technology outline:</h5></p>
+                                <p>
+                                    <b>Flask</b> was used to handle client/server and Twitter API interactions as well as to manage users session.
+                                </p>
+                                <p>
+                                    Twitter API calls were made through one of the Twitter's API wrappers for Python called <b>Twython</b>.
+                                    Users log in through Twitter's own authentication page and the resulting tokens are stored in a session file (both
+                                    app and user based authentication is handled at the same time).
+                                </p>
+                                <p>
+                                    Most of the application content is dynamically generated by first fetching the data as JSON and processing
+                                    the result using <b>jQuery</b>, that injects the final HTML into place via <b>Jinja2</b> templating.
+                                </p>
+                                <p>
+                                    <b>Plotly</b> was used to generated the chart that shows user activity times based on analysing most recent 100 Tweets.
+                                </p>
+                                <p>
+                                    Application styling and layout were done using <b>Bootstrap</b> and some custom <b>CSS</b>.
+                                </p>
+                                <p>
+                                    Some additional <b>jQuery</b> was used for things like character counter for the Tweet window or fade out for alerts.
+                                </p>
                             </div>
                         </div>
-                        <p></p>
-                        <div class="row technology-images justify-content-center align-items-center text-center">
-                            <img data-toggle="tooltip" title="Flask" src="../images/flask.png" alt="Flask"/>
-                            <img data-toggle="tooltip" title="Bootstrap" src="../images/bootstrap.png" alt="Bootstrap"/>
-                            <img data-toggle="tooltip" title="Plotly" src="../images/plotly.png" alt="Plotly"/>
-                            <img data-toggle="tooltip" title="Jinja2" src="../images/jinja.png" alt="Jinja2"/>
-                            <img data-toggle="tooltip" title="jQuery" src="../images/jquery.png" alt="jQuery"/>
-                        </div>
-                        <p style="margin-top: 5px">
-                            Simple Twitter application created as a graduation project for online programming course CS50x by Harvard.
-                        </p>
-                        <h5>Key features:</h5>
-                        <ul class="list-group list-group-flush key-f">
-                            <li class="list-group-item">Search for any user to check their public account information and see when they are most active (based on 100 recent Tweets)</li>
-                            <li class="list-group-item">Post a Tweet - including emoji</li>
-                            <li class="list-group-item">View your 30 newest followers</li>
-                            <li class="list-group-item">Check your timeline, responses and direct messages</li>
-                        </ul>
-                        <p><h5>Technology outline:</h5></p>
-                        <p>
-                            <b>Flask</b> was used to handle client/server and Twitter API interactions as well as to manage users session.
-                        </p>
-                        <p>
-                            Twitter API calls were made through one of the Twitter's API wrappers for Python called <b>Twython</b>.
-                            Users log in through Twitter's own authentication page and the resulting tokens are stored in a session file (both
-                            app and user based authentication is handled at the same time).
-                        </p>
-                        <p>
-                            Most of the application content is dynamically generated by first fetching the data as JSON and processing
-                            the result using <b>jQuery</b>, that injects the final HTML into place via <b>Jinja2</b> templating.
-                        </p>
-                        <p>
-                            <b>Plotly</b> was used to generated the chart that shows user activity times based on analysing most recent 100 Tweets.
-                        </p>
-                        <p>
-                            Application styling and layout were done using <b>Bootstrap</b> and some custom <b>CSS</b>.
-                        </p>
-                        <p>
-                            Some additional <b>jQuery</b> was used for things like character counter for the Tweet window or fade out for alerts.
-                        </p>
-                    </div>
-                </div>
-                    <div class="row justify-content-center" style="margin-top: 15px">
-                        <div class="col-md-11 project">
-                            <p><h5 class="text-center">
-                                Podłoga <span class="badge badge-secondary">In-Development</span>
-                                <a href="https://github.com/BartoszGancza/Podloga">
-                                <img class="float-right git-icon" data-toggle="tooltip" title="Podłoga on GitHub" src="../images/github.png" alt="Project on GitHub"/>
-                                </a>
-                            </h5></p>
-                            <div class="row justify-content-center">
-                                <div class="col-md">
-                                    <div style="width: 100%" id="chart2"></div>
+                        <div class="row justify-content-center" style="margin-top: 15px">
+                            <div class="col-md-11 project">
+                                <p><h5 class="text-center">
+                                    Podłoga <span class="badge badge-secondary">In-Development</span>
+                                    <a href="https://github.com/BartoszGancza/Podloga">
+                                    <img class="float-right git-icon" data-toggle="tooltip" title="Podłoga on GitHub" src="../images/github.svg" alt="Project on GitHub"/>
+                                    </a>
+                                </h5></p>
+                                <div class="row justify-content-center">
+                                    <div class="col-md">
+                                        <div style="width: 100%" id="chart2"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <p></p>
-                            <div class="row technology-images justify-content-center align-items-center text-center">
-                                <img data-toggle="tooltip" title="Django" src="../images/django.png" alt="Django"/>
-                                <img data-toggle="tooltip" title="Bootstrap" src="../images/bootstrap.png" alt="Bootstrap"/>
-                                <img data-toggle="tooltip" title="PostgreSQL" src="../images/postgres.png" alt="PostgreSQL"/>
-                                <img data-toggle="tooltip" title="AWS" src="../images/aws.png" alt="AWS"/>
-                            </div>
-                            <p style="margin-top: 5px">
-                                Helper application for the daily management of the company I currently work for.
-                            </p>
-                            <h5>Key features:</h5>
-                            <ul class="list-group list-group-flush key-f">
-                                <li class="list-group-item">Tracking the Start & End of work time for workers including the customer for whom the work was done</li>
-                                <li class="list-group-item">Keeping a list of customers, including data necessary for written protocols</li>
-                                <li class="list-group-item">Keeping track of material orders assigned to customers (including delivery date)</li>
-                            </ul>
-                            <p><h5>Technology outline:</h5></p>
-                            <p>
-                                Application backend is written using <b>Django</b>. Database is constructed using Django's built in models
-                                and set to use <b>PostgreSQL</b> as the engine.
-                            </p>
-                            <p>
-                                Frontend is built with the help of <b>Bootstrap</b> and Django's templating language.
-                            </p>
-                            <p>
-                                Most of the application content is provided dynamically via queries to database, whose results
-                                are being injected into the DOM using Django's built-in templating language.
-                            </p>
-                            <p>
-                                Users are required to log in to use the application. Office admin staff is given "Staff"
-                                privileges, that allow them to check times logged in by on-site workers, edit customer details
-                                and add material orders.
-                            </p>
-                            <p>
-                                Application is currently hosted on <b>AWS</b> for testing purposes.
-                            </p>
-                        </div>
-                    </div>
-            </div>
-            <a data-toggle="collapse" href="#workExperience" role="button" aria-expanded="false" aria-controls="workExperience">
-                <div class="content-toggle">
-                    <span><h3 style="margin-top: 5px">Work experience: <img src="../images/si-glyph-arrow-down.svg" class="arrow float-right" alt="Expand/Collapse"/></h3></span>
-                </div>
-            </a>
-            <div id="workExperience" class="collapsible collapse">
-                <div class="row justify-content-center">
-                    <div class="col-md-11 project">
-                        <div class="accordion mb-3 mt-3" id="accordion">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                  <h5 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <span class="align-baseline">Collapsible Group Item #1 <img src="../images/si-glyph-arrow-down.svg" class="arrow" alt="Expand/Collapse"/></span>
-                                    </button>
-                                  </h5>
+                                <p></p>
+                                <div class="row justify-content-center align-items-center text-center">
+                                    <img class="technology-images" data-toggle="tooltip" title="Django" src="../images/django.svg" alt="Django"/>
+                                    <img class="technology-images" data-toggle="tooltip" title="Bootstrap" src="../images/bootstrap.svg" alt="Bootstrap"/>
+                                    <img class="technology-images" data-toggle="tooltip" title="PostgreSQL" src="../images/postgres.svg" alt="PostgreSQL"/>
+                                    <img class="technology-images" data-toggle="tooltip" title="AWS" src="../images/aws.svg" alt="AWS"/>
                                 </div>
-                                <div id="collapseOne" class="collapsible collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                  <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                  <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <span class="align-baseline">Collapsible Group Item #2 <img src="../images/si-glyph-arrow-down.svg" class="arrow" alt="Expand/Collapse"/></span>
-                                    </button>
-                                  </h5>
-                                </div>
-                                <div id="collapseTwo" class="collapsible collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                  <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                  <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <span class="align-baseline">Collapsible Group Item #3 <img src="../images/si-glyph-arrow-down.svg" class="arrow" alt="Expand/Collapse"/></span>
-                                    </button>
-                                  </h5>
-                                </div>
-                                <div id="collapseThree" class="collapsible collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                  <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                  </div>
-                                </div>
+                                <p style="margin-top: 5px">
+                                    Helper application for the daily management of the company I currently work for.
+                                </p>
+                                <h5>Key features:</h5>
+                                <ul class="list-group list-group-flush key-f">
+                                    <li class="list-group-item">Tracking the Start & End of work time for workers including the customer for whom the work was done</li>
+                                    <li class="list-group-item">Keeping a list of customers, including data necessary for written protocols</li>
+                                    <li class="list-group-item">Keeping track of material orders assigned to customers (including delivery date)</li>
+                                </ul>
+                                <p><h5>Technology outline:</h5></p>
+                                <p>
+                                    Application backend is written using <b>Django</b>. Database is constructed using Django's built in models
+                                    and set to use <b>PostgreSQL</b> as the engine.
+                                </p>
+                                <p>
+                                    Frontend is built with the help of <b>Bootstrap</b> and Django's templating language.
+                                </p>
+                                <p>
+                                    Most of the application content is provided dynamically via queries to database, whose results
+                                    are being injected into the DOM using Django's built-in templating language.
+                                </p>
+                                <p>
+                                    Users are required to log in to use the application. Office admin staff is given "Staff"
+                                    privileges, that allow them to check times logged in by on-site workers, edit customer details
+                                    and add material orders.
+                                </p>
+                                <p>
+                                    Application is currently hosted on <b>AWS</b> for testing purposes.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center" style="margin-top: 15px">
-                    <div class="col-md-11 project">
-
+                <div class="tab-pane fade" id="nav-work" role="tabpanel" aria-labelledby="nav-work-tab">
+                    <div id="workExperience">
+                        <div class="row justify-content-center">
+                            <div class="col-md-11 project">
+                                <p class="mt-3"><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>11.2016-present<br>
+                                Consumer Service Specialist in company dealing in wooden flooring - <b>“PODŁOGA” Trade and Services</b>.</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Maintaining positive company-customer relations</li>
+                                    <li class="list-group-item">Providing customers with information about products sold by the company (in Polish and English)</li>
+                                    <li class="list-group-item">Preparing documents necessary for completing transactions (material bills, contracts, invoices, material specifications, etc.)</li>
+                                    <li class="list-group-item">Taking care of company’s IT infrastructure (computers, website, e-mails, e-commerce, etc.)</li>
+                                    <li class="list-group-item">Completed reconstruction and update of the company website according to newest standards (Wordpress)</li>
+                                    <li class="list-group-item">Maintaining relations with Sales Representatives from domestic and foreign companies</li>
+                                </ul>
+                                <p></p>
+                                <p><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>04.2016-07.2016<br>
+                                <b>Active Gaming Media (Tokyo branch, Japan)</b>, President’s Office, Marketing Manager</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Managed company SNS</li>
+                                    <li class="list-group-item">Reinstated company’s blog</li>
+                                    <li class="list-group-item">Provided simple analysis of data from Twitter and Facebook analytics</li>
+                                    <li class="list-group-item">Maintained company’s website (posting news, recruitment information, etc.)</li>
+                                    <li class="list-group-item">Created graphical assets (Twitter/Facebook banners, post headers, etc.)</li>
+                                    <li class="list-group-item">Performed as international sales manager</li>
+                                </ul>
+                                <p></p>
+                                <p><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>02.2015-03.2016<br>
+                                <b>Active Gaming Media (Osaka, Japan)</b>, Publishing Division (PLAYISM), Account & Project Manager</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Provided business and royalty related communications to game developers</li>
+                                    <li class="list-group-item">Performed accounting for Publishing Division</li>
+                                    <li class="list-group-item">Communicated with 3rd party platforms (Steam, PSN, GoG, Humble, etc.)</li>
+                                    <li class="list-group-item">Supervised renewal of the PLAYISM’s store page (communication with IT team, QA, functionality planning, etc.)</li>
+                                    <li class="list-group-item">Led the internal Online Royalty Reporting System project (planning, project management, system operation and management)</li>
+                                    <li class="list-group-item">Improved department workflow by introducing new, unified procedures at all steps of publishing process and systematizing team members work (in cooperation with Internal Audit department director)</li>
+                                    <li class="list-group-item">Assisted Publishing Director with general management duties</li>
+                                    <li class="list-group-item">Cooperated with Content Manager as Content Consultant using knowledge and experience about games and gaming industry to judge the potential of new acquisitions</li>
+                                </ul>
+                                <p></p>
+                                <p><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>04.2014-01.2015<br>
+                                <b>Kyoto Heian Hotel</b>, Banquet Staff (Part-time job)</p>
+                                <p></p>
+                                <P><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>11.2011-02.2014<br>
+                                Consumer Service Specialist in company dealing in wooden flooring - <b>“PODŁOGA” Trade and Services</b>.</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">All of the previously listed responsibilities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-school" role="tabpanel" aria-labelledby="nav-school-tab">
+                    <div id="school">
+                        <div class="row justify-content-center">
+                            <div class="col-md-11 project">
+                                <p class="mt-3"><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>2014-2015<br>
+                                    <b>Doshisha University</b>, Center for Japanese Language and Culture Education, Kyoto, Japan</p>
+                                <p class="mt-3"><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>2006-2011<br>
+                                    <b>University of Szczecin</b>, Poland, Nature Sciences Department, Major: Biology (Uniform Master’s degree studies)</p>
+                                <p class="mt-3"><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>2002-2006<br>
+                                    <b>High School nr 2 in Szczecin</b>, Poland, Nature Sciences profile class</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab">
+                    <div id="skills">
+                        <div class="row justify-content-center">
+                            <div class="col-md-11 project">
+                                <ul class="list-group list-group-flush key-f">
+                                    <li class="list-group-item">Video editing:<br>
+                                    <img class="skill-pics" data-toggle="tooltip" title="After Effects" src="../images/ae.svg" alt="After Effects"/>
+                                    <img class="skill-pics" data-toggle="tooltip" title="Premiere Pro" src="../images/prp.svg" alt="Premiere Pro"/>
+                                    <img class="skill-pics" data-toggle="tooltip" title="Sony Movie Studio Platinum 13" src="../images/sms.jpg" alt="Sony Movie Studio Platinum 13"/>
+                                    </li>
+                                    <li class="list-group-item">Graphic design & Photography:<br>
+                                    <img class="skill-pics" data-toggle="tooltip" title="Photoshop" src="../images/ps.svg" alt="Photoshop"/>
+                                    <img class="skill-pics" data-toggle="tooltip" title="Lightroom" src="../images/lr.svg" alt="Lightroom"/>
+                                    <br>
+                                        Photography websites:
+                                        <ul>
+                                            <li><a href="https://zellos.portfoliobox.net" title="Portfolio" data-toggle="tooltip">Portfolio on Portfoliobox.net</a></li>
+                                            <li><a href="https://500px.com/zellosbttg" title="500px" data-toggle="tooltip">My photos on 500px</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">Sound recording & editing:<br>
+                                    <img class="skill-pics" data-toggle="tooltip" title="Audacity" src="../images/audacity.svg" alt="Audacity"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -274,7 +351,7 @@ if('serviceWorker' in navigator) {
         navigator.serviceWorker.ready.then(function(registration) {
            console.log('Service Worker Ready');
         });
-      };
+      }
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -315,8 +392,6 @@ google.charts.setOnLoadCallback(drawChart);
         var chart2 = new google.visualization.PieChart(document.getElementById('chart2'));
         chart.draw(data, options);
         chart2.draw(data2, options);
-
-        $("#myProjects").addClass("collapse");
       }
 </script>
 </body>

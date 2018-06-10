@@ -24,7 +24,6 @@ self.addEventListener('install', e => {
       return cache.addAll([
         `/`,
         `/index.html`,
-        `/css/style.css`,
         `/js/jquery.min.js`,
         `/js/bootstrap.bundle.min.js`,
         `/css/bootstrap.min.css`,
