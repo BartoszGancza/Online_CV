@@ -25,7 +25,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
     <style>
         body {background-image: url(../images/vector_background.svg);background-attachment: fixed; background-size: cover;display: flex;min-height: 100vh;flex-direction: column;}
         #main-content {background-color: rgba(255, 255, 255, 0);border-radius: 20px; flex: 1;}
@@ -49,10 +49,11 @@
         .git-icon {margin-top: 3px; height:35px;}
         .footer {position: sticky; bottom: 0; width: 100%; background-color: #2e91e0; font-size: 0.7rem;}
         .os-logo:hover, #ratings img:hover, #ratings2 img:hover, .technology-images img:hover, .flags:hover {transition: all 0.1s ease-in; -webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.7)); -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='white')"; filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='white')";}
-        .nav-tabs {border-bottom: 1px solid #469cdf;}
+        .nav-tabs {border-radius: 1rem; border-bottom: 1px solid #469cdf;}
         .nav-tabs .nav-link {color: #469cdf;}
+        .nav-tabs .nav-item {border-radius: 1rem;}
         .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {border-color: #469cdf #469cdf #469cdf00; background-color: #469cdf; color: white;}
-        .nav-tabs .nav-link:focus,.nav-tabs .nav-link:hover {border-color: #469cdf #469cdf white;}
+        .nav-tabs .nav-link:focus,.nav-tabs .nav-link:hover {border-color: #469cdf #469cdf #469cdf;}
         .skill-pics {width: 40px; height: 40px; margin-top: 5px;}
         .tab-icons {width: 20px; height: 20px; margin-right: 5px;}
         .os-logo {width: 20%; margin-right: 5px;}
@@ -65,76 +66,80 @@
     <div class="row" style="margin-bottom: 30px">
         <div class="col-md-4" id="left-bar">
             <div class="row justify-content-center align-items-center text-center" id="header">
-                <p class="text-center"><img id="mugshot" src="../images/photo.jpg" alt="Mugshot"/></p>
+                <p class="text-center"><img id="mugshot" src="./images/photo.jpg" alt="Mugshot"/></p>
                 <p class="h2 text-center">Bartosz Gańcza<br><small class="text-muted junior">Junior Web Developer</small></p>
             </div>
             <div class="row">
                 <ul id="personal-list" class="list-group list-group-flush">
-                    <li class="list-group-item"><img class="personal-info-pics" src="../images/si-glyph-birthday-cake.svg" alt="Birthday"/>16th June 1987</li>
-                    <li class="list-group-item"><img class="personal-info-pics" src="../images/si-glyph-house.svg" alt="Address"/>Za Wiatrakiem 3B/2, <br>72-006 Mierzyn, Poland</li>
-                    <li class="list-group-item"><img class="personal-info-pics" src="../images/si-glyph-mobile.svg" alt="Mobile Phone"/>+48 572 273 174</li>
-                    <li class="list-group-item"><img class="personal-info-pics" src="../images/si-glyph-mail.svg" alt="E-mail"/>gartekk@gmail.com</li>
+                    <li class="list-group-item"><img class="personal-info-pics" src="./images/si-glyph-birthday-cake.svg" alt="Birthday"/>16th June 1987</li>
+                    <li class="list-group-item"><img class="personal-info-pics" src="./images/si-glyph-house.svg" alt="Address"/>Za Wiatrakiem 3B/2, <br>72-006 Mierzyn, Poland</li>
+                    <li class="list-group-item"><img class="personal-info-pics" src="./images/si-glyph-mobile.svg" alt="Mobile Phone"/>+48 572 273 174</li>
+                    <li class="list-group-item"><img class="personal-info-pics" src="./images/si-glyph-mail.svg" alt="E-mail"/>gartekk@gmail.com</li>
                 </ul>
             </div>
             <p><h4>Technologies I work with:</h4></p>
             <div id="ratings" class="row justify-content-center align-items-center text-center" style="margin-top: 30px">
                 <div class="col-md-3">
-                    <img class="technology-pics" data-toggle="tooltip" title="Python" src="../images/python.svg" alt="Python"/>
+                    <img class="technology-pics" data-toggle="tooltip" title="Python" src="./images/python.svg" alt="Python"/>
                     <p class="stars">&#9733&#9733&#9733&#9734&#9734</p>
                 </div>
                 <div class="col-md-3">
-                    <img class="technology-pics" data-toggle="tooltip" title="C#" src="../images/csharp.svg" alt="C Sharp"/>
+                    <img class="technology-pics" data-toggle="tooltip" title="C#" src="./images/csharp.svg" alt="C Sharp"/>
                     <p class="stars">&#9733&#9733&#9734&#9734&#9734</p>
                 </div>
                 <div class="col-md-3">
-                    <img class="technology-pics" data-toggle="tooltip" title="C" src="../images/C.svg" alt="C"/>
+                    <img class="technology-pics" data-toggle="tooltip" title="C" src="./images/C.svg" alt="C"/>
                     <p class="stars">&#9733&#9733&#9734&#9734&#9734</p>
                 </div>
                 <div class="col-md-3">
-                    <img class="technology-pics" data-toggle="tooltip" title="HTML" src="../images/html.svg" alt="HTML"/>
+                    <img class="technology-pics" data-toggle="tooltip" title="HTML" src="./images/html.svg" alt="HTML"/>
                     <p class="stars">&#9733&#9733&#9733&#9734&#9734</p>
                 </div>
             </div>
             <div id="ratings2" class="row justify-content-center align-items-center text-center">
                 <div class="col-md-3">
-                    <img class="technology-pics" data-toggle="tooltip" title="JavaScript" src="../images/js.svg" alt="JavaScript"/>
+                    <img class="technology-pics" data-toggle="tooltip" title="JavaScript" src="./images/js.svg" alt="JavaScript"/>
                     <p class="stars">&#9733&#9733&#9734&#9734&#9734</p>
                 </div>
                 <div class="col-md-3">
-                    <img class="technology-pics" data-toggle="tooltip" title="Unity" src="../images/unity.svg" alt="Unity"/>
+                    <img class="technology-pics" data-toggle="tooltip" title="Unity" src="./images/unity.svg" alt="Unity"/>
                     <p class="stars">&#9733&#9733&#9734&#9734&#9734</p>
                 </div>
             </div>
             <p><h4>Foreign languages:</h4></p>
             <ul id="foreignLanguages" class="list-group list-group-flush">
-                <li class="list-group-item"><img class="flags" data-toggle="tooltip" title="Polish" src="../images/pl_s.svg" alt="Polish"/>Native</li>
-                <li class="list-group-item"><img class="flags" data-toggle="tooltip" title="English" src="../images/gb_s.svg" alt="English"/>Fluent (C2 equivalent)</li>
-                <li class="list-group-item"><img class="flags" data-toggle="tooltip" title="Japanese" src="../images/jp_s.svg" alt="Japanese"/>Intermediate</li>
+                <li class="list-group-item"><img class="flags" data-toggle="tooltip" title="Polish" src="./images/pl_s.svg" alt="Polish"/>Native</li>
+                <li class="list-group-item"><img class="flags" data-toggle="tooltip" title="English" src="./images/gb_s.svg" alt="English"/>Fluent (C2 equivalent)</li>
+                <li class="list-group-item"><img class="flags" data-toggle="tooltip" title="Japanese" src="./images/jp_s.svg" alt="Japanese"/>Intermediate</li>
             </ul>
             <p><h4>OSs I use:</h4></p>
             <p class="mb-4 text-center">
-                <img class="os-logo" data-toggle="tooltip" title="Windows" src="../images/windows.svg" alt="Windows"/>
-                <img class="os-logo" data-toggle="tooltip" title="MacOS" src="../images/mac.svg" alt="MacOS"/>
-                <img class="os-logo" data-toggle="tooltip" title="Ubuntu" src="../images/ubuntu.svg" alt="Ubuntu"/>
+                <img class="os-logo" data-toggle="tooltip" title="Windows" src="./images/windows.svg" alt="Windows"/>
+                <img class="os-logo" data-toggle="tooltip" title="MacOS" src="./images/mac.svg" alt="MacOS"/>
+                <img class="os-logo" data-toggle="tooltip" title="Ubuntu" src="./images/ubuntu.svg" alt="Ubuntu"/>
             </p>
         </div>
         <div class="col-md-8 right-content pb-4">
+            <div class="row justify-content-center">
+            <div class="col-md-11 pl-0 pr-0 mt-1">
             <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                     <a class="nav-item nav-link active" id="nav-projects-tab" data-toggle="tab" href="#nav-projects" role="tab" aria-controls="nav-projects" aria-selected="true">
-                        <span class="align-text-bottom"><img class="tab-icons" src="../images/project.svg" alt="Projects"/></span>My Projects
+                        <span class="align-text-bottom"><img class="tab-icons" src="./images/project.svg" alt="Projects"/></span>My Projects
                     </a>
                     <a class="nav-item nav-link" id="nav-work-tab" data-toggle="tab" href="#nav-work" role="tab" aria-controls="nav-work" aria-selected="false">
-                        <span class="align-text-bottom"><img class="tab-icons" src="../images/work.svg" alt="Work"/></span>Work Experience
+                        <span class="align-text-bottom"><img class="tab-icons" src="./images/work.svg" alt="Work"/></span>Work Experience
                     </a>
                     <a class="nav-item nav-link" id="nav-school-tab" data-toggle="tab" href="#nav-school" role="tab" aria-controls="nav-school" aria-selected="false">
-                        <span class="align-text-bottom"><img class="tab-icons" src="../images/education.svg" alt="Education"/></span>School
+                        <span class="align-text-bottom"><img class="tab-icons" src="./images/education.svg" alt="Education"/></span>School
                     </a>
                     <a class="nav-item nav-link" id="nav-skills-tab" data-toggle="tab" href="#nav-skills" role="tab" aria-controls="nav-skills" aria-selected="false">
-                        <span class="align-text-bottom"><img class="tab-icons" src="../images/skills.svg" alt="Skills"/></span>Additional Skills
+                        <span class="align-text-bottom"><img class="tab-icons" src="./images/skills.svg" alt="Skills"/></span>Additional Skills
                     </a>
                 </div>
             </nav>
+            </div>
+            </div>
             <div class="tab-content mt-3" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
                     <div id="myProjects">
@@ -143,7 +148,7 @@
                                 <p><h5 class="text-center">
                                     Tweezel
                                     <a href="https://github.com/BartoszGancza/Twezeel">
-                                    <img class="float-right git-icon" data-toggle="tooltip" title="Tweezel on GitHub" src="../images/github.svg" alt="Project on GitHub"/>
+                                    <img class="float-right git-icon" data-toggle="tooltip" title="Tweezel on GitHub" src="./images/github.svg" alt="Project on GitHub"/>
                                     </a>
                                 </h5></p>
                                 <div class="row justify-content-center">
@@ -153,11 +158,11 @@
                                 </div>
                                 <p></p>
                                 <div class="row technology-images justify-content-center align-items-center text-center">
-                                    <img data-toggle="tooltip" title="Flask" src="../images/flask_s.svg" alt="Flask"/>
-                                    <img data-toggle="tooltip" title="Bootstrap" src="../images/bootstrap.svg" alt="Bootstrap"/>
-                                    <img data-toggle="tooltip" title="Plotly" src="../images/plotly.svg" alt="Plotly"/>
-                                    <img data-toggle="tooltip" title="Jinja2" src="../images/jinja.svg" alt="Jinja2"/>
-                                    <img data-toggle="tooltip" title="jQuery" src="../images/jquery.svg" alt="jQuery"/>
+                                    <img data-toggle="tooltip" title="Flask" src="./images/flask_s.svg" alt="Flask"/>
+                                    <img data-toggle="tooltip" title="Bootstrap" src="./images/bootstrap.svg" alt="Bootstrap"/>
+                                    <img data-toggle="tooltip" title="Plotly" src="./images/plotly.svg" alt="Plotly"/>
+                                    <img data-toggle="tooltip" title="Jinja2" src="./images/jinja.svg" alt="Jinja2"/>
+                                    <img data-toggle="tooltip" title="jQuery" src="./images/jquery.svg" alt="jQuery"/>
                                 </div>
                                 <p style="margin-top: 5px">
                                     Simple Twitter application created as a graduation project for online programming course CS50x by Harvard.
@@ -198,7 +203,7 @@
                                 <p><h5 class="text-center">
                                     Podłoga <span class="badge badge-secondary">In-Development</span>
                                     <a href="https://github.com/BartoszGancza/Podloga">
-                                    <img class="float-right git-icon" data-toggle="tooltip" title="Podłoga on GitHub" src="../images/github.svg" alt="Project on GitHub"/>
+                                    <img class="float-right git-icon" data-toggle="tooltip" title="Podłoga on GitHub" src="./images/github.svg" alt="Project on GitHub"/>
                                     </a>
                                 </h5></p>
                                 <div class="row justify-content-center">
@@ -208,10 +213,10 @@
                                 </div>
                                 <p></p>
                                 <div class="row technology-images justify-content-center align-items-center text-center">
-                                    <img data-toggle="tooltip" title="Django" src="../images/django.svg" alt="Django"/>
-                                    <img data-toggle="tooltip" title="Bootstrap" src="../images/bootstrap.svg" alt="Bootstrap"/>
-                                    <img data-toggle="tooltip" title="PostgreSQL" src="../images/postgres.svg" alt="PostgreSQL"/>
-                                    <img data-toggle="tooltip" title="AWS" src="../images/aws.svg" alt="AWS"/>
+                                    <img data-toggle="tooltip" title="Django" src="./images/django.svg" alt="Django"/>
+                                    <img data-toggle="tooltip" title="Bootstrap" src="./images/bootstrap.svg" alt="Bootstrap"/>
+                                    <img data-toggle="tooltip" title="PostgreSQL" src="./images/postgres.svg" alt="PostgreSQL"/>
+                                    <img data-toggle="tooltip" title="AWS" src="./images/aws.svg" alt="AWS"/>
                                 </div>
                                 <p style="margin-top: 5px">
                                     Helper application for the daily management of the company I currently work for.
@@ -250,45 +255,139 @@
                     <div id="workExperience">
                         <div class="row justify-content-center">
                             <div class="col-md-11 project">
-                                <p class="mt-3"><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>11.2016-present<br>
+                                <p class="mt-3"><b>Disclaimer:</b><br>While I don't have much commercial experience in web development, I welcome any chance
+                                to grow personally by acquiring new skills and knowledge. Having always liked to build new things, and watch them come
+                                to life and grow, as well as being a fan of problem solving and puzzles, programming turns to be a discipline
+                                I am fairly passionate about.</p>
+                                <p><img class="personal-info-pics calendar-icon" src="./images/calendar.svg" alt="Date"/>11.2016-present<br>
                                 Consumer Service Specialist in company dealing in wooden flooring - <b>“PODŁOGA” Trade and Services</b>.</p>
-                                <ul class="list-group">
-                                    <li class="list-group-item">Maintaining positive company-customer relations</li>
-                                    <li class="list-group-item">Providing customers with information about products sold by the company (in Polish and English)</li>
-                                    <li class="list-group-item">Preparing documents necessary for completing transactions (material bills, contracts, invoices, material specifications, etc.)</li>
-                                    <li class="list-group-item">Taking care of company’s IT infrastructure (computers, website, e-mails, e-commerce, etc.)</li>
-                                    <li class="list-group-item">Completed reconstruction and update of the company website according to newest standards (Wordpress)</li>
-                                    <li class="list-group-item">Maintaining relations with Sales Representatives from domestic and foreign companies</li>
-                                </ul>
+                                <div id="accordion1">
+                                    <div class="card">
+                                        <div class="card-header" id="ITRelatedPodloga1">
+                                            <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOnePodloga" aria-expanded="true" aria-controls="collapseOnePodloga">
+                                            IT related responsibilities:
+                                            </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOnePodloga" class="collapse show" aria-labelledby="ITRelatedPodloga1" data-parent="#accordion1">
+                                            <div class="card-body">
+                                            <ul class="list-group">
+                                            <li class="list-group-item">Taking care of company’s IT infrastructure (computers, website, e-mails, e-commerce, etc.)</li>
+                                            <li class="list-group-item">Completed reconstruction and update of the company website (Wordpress)</li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="card">
+                                            <div class="card-header" id="ITRelatedPodloga2">
+                                            <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwoPodloga" aria-expanded="false" aria-controls="collapseTwoPodloga">
+                                            Other responsibilities:
+                                            </button>
+                                            </h5>
+                                            </div>
+                                            <div id="collapseTwoPodloga" class="collapse" aria-labelledby="ITRelatedPodloga2" data-parent="#accordion1">
+                                                <div class="card-body">
+                                                <ul class="list-group">
+                                                <li class="list-group-item">Maintaining positive company-customer relations</li>
+                                                <li class="list-group-item">Providing customers with information about products sold by the company (in Polish and English)</li>
+                                                <li class="list-group-item">Preparing documents necessary for completing transactions (material bills, contracts, invoices, material specifications, etc.)</li>
+                                                <li class="list-group-item">Maintaining relations with Sales Representatives from domestic and foreign companies</li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
                                 <p></p>
-                                <p><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>04.2016-07.2016<br>
+                                <p><img class="personal-info-pics calendar-icon" src="./images/calendar.svg" alt="Date"/>04.2016-07.2016<br>
                                 <b>Active Gaming Media (Tokyo branch, Japan)</b>, President’s Office, Marketing Manager</p>
-                                <ul class="list-group">
-                                    <li class="list-group-item">Managed company SNS</li>
-                                    <li class="list-group-item">Reinstated company’s blog</li>
-                                    <li class="list-group-item">Provided simple analysis of data from Twitter and Facebook analytics</li>
-                                    <li class="list-group-item">Maintained company’s website (posting news, recruitment information, etc.)</li>
-                                    <li class="list-group-item">Created graphical assets (Twitter/Facebook banners, post headers, etc.)</li>
-                                    <li class="list-group-item">Performed as international sales manager</li>
-                                </ul>
+                                <div id="accordion2">
+                                    <div class="card">
+                                        <div class="card-header" id="ITRelatedAGMTokyo1">
+                                            <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOneAGMTokyo" aria-expanded="true" aria-controls="collapseOneAGMTokyo">
+                                            IT related responsibilities:
+                                            </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOneAGMTokyo" class="collapse show" aria-labelledby="ITRelatedAGMTokyo1" data-parent="#accordion2">
+                                            <div class="card-body">
+                                            <ul class="list-group">
+                                            <li class="list-group-item">Reinstated company’s blog</li>
+                                            <li class="list-group-item">Maintained company’s website (posting news, recruitment information, etc.)</li>
+                                            <li class="list-group-item">Created graphical assets (Twitter/Facebook banners, post headers, etc.)</li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="card">
+                                            <div class="card-header" id="ITRelatedAGMTokyo2">
+                                            <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwoAGMToyko" aria-expanded="false" aria-controls="collapseTwoAGMToyko">
+                                            Other responsibilities:
+                                            </button>
+                                            </h5>
+                                            </div>
+                                            <div id="collapseTwoAGMToyko" class="collapse" aria-labelledby="ITRelatedAGMTokyo2" data-parent="#accordion2">
+                                                <div class="card-body">
+                                                <ul class="list-group">
+                                                <li class="list-group-item">Managed company SNS</li>
+                                                <li class="list-group-item">Provided simple analysis of data from Twitter and Facebook analytics</li>
+                                                <li class="list-group-item">Performed as international sales manager</li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 <p></p>
-                                <p><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>02.2015-03.2016<br>
+                                <p><img class="personal-info-pics calendar-icon" src="./images/calendar.svg" alt="Date"/>02.2015-03.2016<br>
                                 <b>Active Gaming Media (Osaka, Japan)</b>, Publishing Division (PLAYISM), Account & Project Manager</p>
-                                <ul class="list-group">
-                                    <li class="list-group-item">Provided business and royalty related communications to game developers</li>
-                                    <li class="list-group-item">Performed accounting for Publishing Division</li>
-                                    <li class="list-group-item">Communicated with 3rd party platforms (Steam, PSN, GoG, Humble, etc.)</li>
-                                    <li class="list-group-item">Supervised renewal of the PLAYISM’s store page (communication with IT team, QA, functionality planning, etc.)</li>
-                                    <li class="list-group-item">Led the internal Online Royalty Reporting System project (planning, project management, system operation and management)</li>
-                                    <li class="list-group-item">Improved department workflow by introducing new, unified procedures at all steps of publishing process and systematizing team members work (in cooperation with Internal Audit department director)</li>
-                                    <li class="list-group-item">Assisted Publishing Director with general management duties</li>
-                                    <li class="list-group-item">Cooperated with Content Manager as Content Consultant using knowledge and experience about games and gaming industry to judge the potential of new acquisitions</li>
-                                </ul>
+                                <div id="accordion3">
+                                    <div class="card">
+                                        <div class="card-header" id="ITRelatedAGMOsaka1">
+                                            <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOneAGMOsaka" aria-expanded="true" aria-controls="collapseOneAGMOsaka">
+                                            IT related responsibilities:
+                                            </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOneAGMOsaka" class="collapse show" aria-labelledby="ITRelatedAGMOsaka1" data-parent="#accordion3">
+                                            <div class="card-body">
+                                            <ul class="list-group">
+                                            <li class="list-group-item">Supervised renewal of the PLAYISM’s store page (communication with IT team, QA, functionality planning, etc.)</li>
+                                            <li class="list-group-item">Led the internal Online Royalty Reporting System project (planning, project management, system operation and management)</li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="card">
+                                            <div class="card-header" id="ITRelatedAGMOsaka2">
+                                            <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwoAGMOsaka" aria-expanded="false" aria-controls="collapseTwoAGMOsaka">
+                                            Other responsibilities:
+                                            </button>
+                                            </h5>
+                                            </div>
+                                            <div id="collapseTwoAGMOsaka" class="collapse" aria-labelledby="ITRelatedAGMOsaka2" data-parent="#accordion3">
+                                                <div class="card-body">
+                                                <ul class="list-group">
+                                                <li class="list-group-item">Provided business and royalty related communications to game developers</li>
+                                                <li class="list-group-item">Performed accounting for Publishing Division</li>
+                                                <li class="list-group-item">Communicated with 3rd party platforms (Steam, PSN, GoG, Humble, etc.)</li>
+                                                <li class="list-group-item">Improved department workflow by introducing new, unified procedures at all steps of publishing process and systematizing team members work (in cooperation with Internal Audit department director)</li>
+                                                <li class="list-group-item">Assisted Publishing Director with general management duties</li>
+                                                <li class="list-group-item">Cooperated with Content Manager as Content Consultant using knowledge and experience about games and gaming industry to judge the potential of new acquisitions</li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
                                 <p></p>
-                                <p><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>04.2014-01.2015<br>
+                                <p><img class="personal-info-pics calendar-icon" src="./images/calendar.svg" alt="Date"/>04.2014-01.2015<br>
                                 <b>Kyoto Heian Hotel</b>, Banquet Staff (Part-time job)</p>
                                 <p></p>
-                                <P><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>11.2011-02.2014<br>
+                                <P><img class="personal-info-pics calendar-icon" src="./images/calendar.svg" alt="Date"/>11.2011-02.2014<br>
                                 Consumer Service Specialist in company dealing in wooden flooring - <b>“PODŁOGA” Trade and Services</b>.</p>
                                 <ul class="list-group">
                                     <li class="list-group-item">All of the previously listed responsibilities</li>
@@ -301,11 +400,11 @@
                     <div id="school">
                         <div class="row justify-content-center">
                             <div class="col-md-11 project">
-                                <p class="mt-3"><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>2014-2015<br>
+                                <p class="mt-3"><img class="personal-info-pics calendar-icon" src="./images/calendar.svg" alt="Date"/>2014-2015<br>
                                     <b>Doshisha University</b>, Center for Japanese Language and Culture Education, Kyoto, Japan</p>
-                                <p class="mt-3"><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>2006-2011<br>
+                                <p class="mt-3"><img class="personal-info-pics calendar-icon" src="./images/calendar.svg" alt="Date"/>2006-2011<br>
                                     <b>University of Szczecin</b>, Poland, Nature Sciences Department, Major: Biology (Uniform Master’s degree studies)</p>
-                                <p class="mt-3"><img class="personal-info-pics calendar-icon" src="../images/calendar.svg" alt="Date"/>2002-2006<br>
+                                <p class="mt-3"><img class="personal-info-pics calendar-icon" src="./images/calendar.svg" alt="Date"/>2002-2006<br>
                                     <b>High School nr 2 in Szczecin</b>, Poland, Nature Sciences profile class</p>
                             </div>
                         </div>
@@ -317,13 +416,13 @@
                             <div class="col-md-11 project">
                                 <ul class="list-group list-group-flush key-f">
                                     <li class="list-group-item">Video editing:<br>
-                                    <img class="skill-pics" data-toggle="tooltip" title="After Effects" src="../images/ae.svg" alt="After Effects"/>
-                                    <img class="skill-pics" data-toggle="tooltip" title="Premiere Pro" src="../images/prp.svg" alt="Premiere Pro"/>
+                                    <img class="skill-pics" data-toggle="tooltip" title="After Effects" src="./images/ae.svg" alt="After Effects"/>
+                                    <img class="skill-pics" data-toggle="tooltip" title="Premiere Pro" src="./images/prp.svg" alt="Premiere Pro"/>
                                     <img class="skill-pics" data-toggle="tooltip" title="Sony Movie Studio Platinum 13" src="../images/sms.jpg" alt="Sony Movie Studio Platinum 13"/>
                                     </li>
                                     <li class="list-group-item">Graphic design & Photography:<br>
-                                    <img class="skill-pics" data-toggle="tooltip" title="Photoshop" src="../images/ps.svg" alt="Photoshop"/>
-                                    <img class="skill-pics" data-toggle="tooltip" title="Lightroom" src="../images/lr.svg" alt="Lightroom"/>
+                                    <img class="skill-pics" data-toggle="tooltip" title="Photoshop" src="./images/ps.svg" alt="Photoshop"/>
+                                    <img class="skill-pics" data-toggle="tooltip" title="Lightroom" src="./images/lr.svg" alt="Lightroom"/>
                                     <br>
                                         Photography websites:
                                         <ul>
@@ -332,7 +431,7 @@
                                         </ul>
                                     </li>
                                     <li class="list-group-item">Sound recording & editing:<br>
-                                    <img class="skill-pics" data-toggle="tooltip" title="Audacity" src="../images/audacity.svg" alt="Audacity"/>
+                                    <img class="skill-pics" data-toggle="tooltip" title="Audacity" src="./images/audacity.svg" alt="Audacity"/>
                                     </li>
                                 </ul>
                             </div>
@@ -357,8 +456,8 @@
         </div>
     </div>
 </footer>
-<script src="../js/jquery.min.js" type="text/javascript"></script>
-<script src="../js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<script src="./js/jquery.min.js" type="text/javascript"></script>
+<script src="./js/bootstrap.bundle.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script>
 if('serviceWorker' in navigator) {
